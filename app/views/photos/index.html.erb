@@ -1,0 +1,32 @@
+<div id = "static_master_list" >
+<h1>Overzicht foto's</h1>
+
+<table>
+  <tr>
+  	<th><p>ID</p></th>
+    <th><p>Title</p></th>
+    <th><p>File</p></th>
+    <th><p>Filename</p></th>
+    <th><p></p></th>
+    <th><p></p></th>
+    <th><p></p></th>
+  </tr>
+
+<% @photos.each do |photo| %>
+  <tr>
+  	<tr class="<%= cycle('list_line_odd', 'list_line_even') %>">
+  		
+	<td><%= photo.id %></td>		
+    <td><%= photo.title %></td>
+    <td><%= photo.file %></td>
+    <td><%= photo.filename %></td>
+    <td><%= link_to 'Show', photo %></td>
+    <td><%= link_to 'Edit', edit_photo_path(photo) %></td>
+  <!--  <td><%= link_to 'Destroy', photo, confirm: 'Are you sure?', method: :delete %></td> -->
+  </tr>
+<% end %>
+</table>
+</div>
+<br />
+
+<%= link_to 'New Photo', new_photo_path %>

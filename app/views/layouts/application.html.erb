@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+  <title>MTBidee Application Website</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+
+<body id="main">
+	
+	<div id="banner" >
+<!--	  <%= image_tag("top.jpg") %> -->
+	  <%= @page_title || "MTBidee - Layouts application.html.erb" %>
+	</div>
+	
+	<div id="maincolumn" >	
+		<div id="maincolumnside" >
+			<a><i> <%= Time.now.strftime("%d-%m-%Y %H:%M") %> </a> </i>  <!-- Add date and time to the website -->
+			<a href="http://localhost:3000/" >Home</a><br />
+			<a></a><br />
+			
+			
+			<a href="http://localhost:3000/photos" > Foto's</a><br />
+			<a></a><br />			
+
+		</div>	
+		
+		<div id="maincentre" >	
+			<%= yield %>
+		</div>
+		
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+// Place all the styles related to the main controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+#banner {
+background: #848484;  // banana is rgb(227, 207, 87) terwijl logo is rgb(229,202,85)
+padding-top: 20px;
+padding-bottom: 20px;
+// border-bottom: 2px solid;
+font: small-caps 40px/40px "Times New Roman", serif;
+color: #000099;
+text-align: center;
+}
+
+#banner img {
+float: left;
+padding-left: 1em;
+}
+
+#maincolumn {
+background: #FFFFFF;
+
+}
+
+#maincolumn a:hover  {
+background: #99cccc;
+overflow: hidden;
+text-decoration: none;
+}
+
+#maincentre {
+margin-left: 12em;
+margin-right: 12em;
+padding-top: 4ex;
+padding-bottom: 4ex;
+padding-left: 2em;
+padding-right: 2em;
+background: #000000;
+}
+
+#maincentre H1 {	
+color: #FFFFFF;
+}
+
+#maincentre H2 {	
+color: #A7B1FF;
+}
+
+#maincentre P {	
+color: #FC7184;
+}
+
+#maincolumnside {
+float: left;
+padding-top: 1em;
+padding-left: 1em;
+padding-bottom: 1em;
+width: 11em;
+background: #EDEDED;
+}
+
+
+#maincolumnside a {
+color: #000099;
+font-size: small;
+}

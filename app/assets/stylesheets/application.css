@@ -1,0 +1,156 @@
+/*
+ * This is a manifest file that'll automatically include all the stylesheets available in this directory
+ * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
+ * the top of the compiled file, but it's generally better to create a new file per style scope.
+ *= require_self
+ *= require_tree . 
+*/
+
+
+
+
+#static_master_list .list_line_even {
+	background: #E0DFDB;
+}
+
+#static_master_list .list_line_odd {
+	background: #FFFACD;
+}
+
+#static_master_list h1, th, td, {
+	color: #000099;
+}
+
+
+/*
+ * Remove borders between records 
+*/
+#static_master_list table {
+        border-collapse: collapse;
+}
+
+
+/*
+ * Basic record change list
+*/
+#static_master_list  .list_actions { 
+	 color: #000 
+}
+
+
+
+
+
+/*
+ * Floating data master liust
+ * 
+ * 
+*/
+
+
+
+
+#floating_master_list .list_line_even {
+	background: #99cccc;
+}
+
+#floating_master_list .list_line_odd {
+	background: #ccffff;
+}
+
+#floating_master_list h1, th, td {
+	color: #000099;
+}
+
+
+/*
+ * Remove borders between records 
+*/
+#floating_master_list table {
+        border-collapse: collapse;
+}
+
+
+/*
+ * Basic record change list
+*/
+#floating_master_list  .list_actions { 
+	 color: #000 
+}
+
+
+
+
+
+/*
+ * master sheet as main/index etc
+ *  
+ * 
+*/
+
+#master_list h1, th, h2, td, p {
+	color: #000099;
+}
+
+/*
+ * footer
+ *  
+ * 
+*/
+
+
+
+
+
+#footercentre {
+	background-color: #807c77;
+	border-bottom: 10px solid #4c2719;
+	color: #fff;
+	font-size: 0.7em;
+	height: 80px;
+padding-top: 10px;
+padding-bottom: 10px;	
+padding-left: 20em;
+	
+}
+
+
+
+
+
+/*
+ * table header settings
+ */
+table#tabeqalloc th {
+	color: #ff8000;
+
+ }
+ 
+
+
+/*
+ * table record settings
+ */
+table#tabeqalloc  td {
+	color: #ff8000;
+	background: #F3E88E;
+	font: "Arial Black";
+	font-size: 12px;
+}
+
+table#tabeqalloc 	td:hover {
+	background: #ff8000;
+	color: #E2E8EF;
+	text-decoration: none;
+	}
+
+
+
+
+/*
+ * general table settings
+ */
+table#tabeqalloc   {
+
+	
+}
